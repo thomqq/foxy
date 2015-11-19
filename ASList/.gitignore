@@ -113,6 +113,6 @@ npm-debug.log
 *#
 .DS_STORE
 .netbeans
-nbproject
+nbproject/private
 .idea
 .node_history
