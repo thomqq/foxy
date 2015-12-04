@@ -48,4 +48,9 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+        
+    TokenTestController: {
+        '*': true,
+        restricted: 'hasJsonWebToken'
+    }
 };
