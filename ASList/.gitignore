@@ -67,7 +67,7 @@ config/local.js
 ################################################
 
 node_modules
-bower_components
+assets/bower_components
 
 
 
@@ -116,3 +116,5 @@ npm-debug.log
 nbproject/private
 .idea
 .node_history
+
+www

@@ -1,5 +1,5 @@
 {
-    "directory": "bower_components",
+    "directory": "assets/bower_components",
     "strict-ssl":false,
     "proxy":"http://proxy.firma.itsoft.pl:8080",
     "https-proxy":"http://proxy.firma.itsoft.pl:8080"    
