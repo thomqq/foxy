@@ -14,20 +14,20 @@ aslistApp.config(['$routeProvider', '$locationProvider',
             redirectTo: '/',
             caseInsensitiveMatch: true
         });
-        
+
         $locationProvider.html5Mode(true);
     }]);
 
-aslistApp.controller('LoginController', ['$scope', '$location','AuthenticationService', function ($scope, $location, AuthenticationService) {
+aslistApp.controller('LoginController', ['$scope', '$location', 'AuthenticationService', function ($scope, $location, AuthenticationService) {
         $scope.formData = {};
-        
-        $scope.onLogin = function() {
-            var result = AuthenticationService.login($scope.username, $scope.password);
-            console.log(result);
-            if(result.isSuccessfull) {
-                $location.path('/dashboard');
-            } else {
-                $scope.error = result.errorMsg;
-            }
+
+        $scope.onLogin = function () {
+            AuthenticationService.login($scope.username, $scope.password).then(function (authResult) {
+                if (authResult.isSuccessfull) {
+                    $location.path('/dashboard');
+                } else {
+                    $scope.error = authResult.errorMsg;
+                }
+            });
         }
     }]);
