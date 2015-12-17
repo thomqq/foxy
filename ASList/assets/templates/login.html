@@ -4,6 +4,10 @@
             <h3 class="form-signin-heading">Welcome Back in ASList! Please Sign In</h3>
             <hr class="colorgraph"><br>
 
+            <div class="alert alert-danger alert-dismissible" role="alert" ng-show="$scope.error">
+                {{error}}
+            </div>
+            
             <input ng-model="username" type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
             <input ng-model="password" type="password" class="form-control" name="Password" placeholder="Password" required=""/>     		  
 
