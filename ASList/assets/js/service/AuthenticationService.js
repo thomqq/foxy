@@ -1,12 +1,12 @@
 
 
 aslistApp.service('AuthenticationService', function ($http, $q) {
-    function AuthorizationRezult(isSuccessfull, token, errorMsg) {
+    var AuthorizationRezult = function(isSuccessfull, token, errorMsg) {
         this.isSuccessfull = isSuccessfull;
         this.token = token;
         this.errorMsg = errorMsg;
     };
-    
+
     return {
         login: function (username, password) {
             var defer = $q.defer();
@@ -15,9 +15,13 @@ aslistApp.service('AuthenticationService', function ($http, $q) {
                 defer.resolve(AuthorizationRezult(true, 'XXX'));
             }).error(function (err, status) {
                 if(err.error !== undefined) {
-                    defer.resolve(AuthorizationRezult(false, undefined, err.error));
+                    console.log(new AuthorizationRezult(false, undefined, err.error));
+                    defer.resolve(new AuthorizationRezult(false, undefined, err.error));
+                    return;
                 }
-                defer.resolve(AuthorizationRezult(false, undefined, 'Błąd komunikacji: Error '+status));
+                console.log(new AuthorizationRezult(false, undefined, 'Błąd komunikacji: Error '+status));
+                defer.resolve(new AuthorizationRezult(false, undefined, 'Błąd komunikacji: Error '+status));
+                return;
             });
             return defer.promise;
         }
