@@ -1,6 +1,8 @@
-
-
-aslistApp.service('AuthenticationService', function ($http, $q) {
+(function () {
+    
+    var aslistApp = angular.module('ASListApp');
+    
+    aslistApp.service('AuthenticationService', function ($http, $q) {
     var AuthorizationResult = function(isSuccessfull, token, errorMsg) {
         this.isSuccessfull = isSuccessfull;
         this.token = token;
@@ -24,3 +26,5 @@ aslistApp.service('AuthenticationService', function ($http, $q) {
         }
     };
 });
+    
+})()
