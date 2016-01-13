@@ -13,6 +13,12 @@ module.exports = {
     /* e.g.
     nickname: 'string'
     */
+   
+   role: {
+       type: 'string',
+       enum: ['admin', 'user', 'inspector'],
+       defaultsTo: 'user'
+   }
     
   }),
   

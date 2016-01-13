@@ -51,6 +51,7 @@ module.exports.policies = {
         
     TokenTestController: {
         '*': true,
-        restricted: 'hasJsonWebToken'
+        restricted: 'hasJsonWebToken',
+        adminOnly: 'isAdmin'
     }
 };

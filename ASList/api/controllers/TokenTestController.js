@@ -5,5 +5,9 @@ module.exports = {
     
     restricted: function(req, res) {
         return res.send("token restricted page");
+    },
+    
+    adminOnly: function(req, res) {
+        return res.send("token admin restricted page");
     }
 }
