@@ -53,5 +53,10 @@ module.exports.policies = {
         '*': true,
         restricted: 'hasJsonWebToken',
         adminOnly: 'isAdmin'
+    },
+    
+    UserController: {
+        '*': false,
+        login: true
     }
 };
