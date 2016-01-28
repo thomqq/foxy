@@ -58,5 +58,9 @@ module.exports.policies = {
     UserController: {
         '*': false,
         login: true
+    },
+    
+    UserAdminController: {
+        '*': false
     }
 };

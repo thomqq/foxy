@@ -6,6 +6,8 @@ describe('Policies', function () {
 
     var token;
 
+
+
     before(function(beforeDone){
             request(sails.hooks.http.app)
                 .post('/users/login')
