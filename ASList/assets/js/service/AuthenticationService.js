@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
     
     var aslistApp = angular.module('ASListApp');
