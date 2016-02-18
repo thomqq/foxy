@@ -62,5 +62,9 @@ module.exports.policies = {
     
     UserAdminController: {
         '*': false
+    },
+    
+    LdapController: {
+        '*': true
     }
 };
