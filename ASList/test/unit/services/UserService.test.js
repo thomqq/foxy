@@ -4,10 +4,11 @@ var assert = require('assert');
 
 describe('UserService', function () {
 
-    it('should returns any users', function () {
+    it('should returns any users', function (done) {
         var UserService = sails.services.userservice;
-        var result = UserService.getSystemUsers();
-        
-        assert.notEqual(result.length, 0);
+        UserService.getSystemUsers(function(users){
+            assert.notEqual(users.length, 0);
+            done();
+        });
     });
 })
