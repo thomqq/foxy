@@ -11,6 +11,9 @@
             }).when('/dashboard', {
                 templateUrl: '/templates/dashboard.html',
                 controller: 'DashboardController'
+            }).when('/admin/users', {
+                templateUrl: '/templates/admin/users.html',
+                controller: 'UserAdminController'
             }).otherwise({
                 redirectTo: '/',
                 caseInsensitiveMatch: true

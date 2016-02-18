@@ -17,7 +17,11 @@
         }]);
     
     aslistApp.controller('DashboardController', ['$scope', function ($scope) {
-            
+
         }]);
+
+    aslistApp.controller('UserAdminController', ['$scope', function ($scope) {
+
+        }]);    
     
 })()
