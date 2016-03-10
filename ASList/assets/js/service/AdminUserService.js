@@ -9,13 +9,24 @@
     return {
         users: function () {
             var defer = $q.defer();
-            $http.get('/admin/user2')
+            $http.get('/admin/user')
             .success(function (data) {
                 defer.resolve(data);
             }).error(function (data, status) {
                 defer.reject(status);
             });
             return defer.promise;
+        },
+        
+        user: function(userId) {
+            var defer = $q.defer();
+            $http.get('/admin/user/'+userId)
+            .success(function (data) {
+                defer.resolve(data);
+            }).error(function (data, status) {
+                defer.reject(status);
+            });
+            return defer.promise;            
         }
     };
 });

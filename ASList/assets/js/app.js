@@ -14,6 +14,9 @@
             }).when('/admin/users', {
                 templateUrl: '/templates/admin/users.html',
                 controller: 'UserAdminController'
+            }).when('/admin/user/:userId', {
+                templateUrl: '/templates/admin/userEdit.html',
+                controller: 'UserAdminEditController'
             }).otherwise({
                 redirectTo: '/',
                 caseInsensitiveMatch: true

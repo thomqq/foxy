@@ -20,7 +20,7 @@
 
         }]);
 
-    aslistApp.controller('UserAdminController', ['$scope', 'AdminUserService', function ($scope, AdminUserService) {
+    aslistApp.controller('UserAdminController', ['$scope', '$location', 'AdminUserService', function ($scope, $location, AdminUserService) {
             AdminUserService.users().then(function(users){
                 $scope.users = users;
                 $scope.error = false;
@@ -28,6 +28,19 @@
                 $scope.users = [];
                 $scope.error = errorCode;
             });
+            
+            $scope.edit = function(userId) {
+                $location.path('/admin/user/'+userId);
+            };
     }]);    
     
+    
+    aslistApp.controller('UserAdminEditController', ['$scope', '$location', '$routeParams', 'AdminUserService', function ($scope, $location, $routeParams, AdminUserService) {
+            AdminUserService.user($routeParams.userId).then(function(user){
+                $scope.user = user;
+            }, function(){
+                alert('Nie znaleziono użytkownika');
+                $location.path('/admin/users');
+            });
+    }]);
 })()
