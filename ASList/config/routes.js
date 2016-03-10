@@ -37,7 +37,8 @@ module.exports.routes = {
   },
   
   'post /users/login' : 'AuthController.login',
-  'get /users/dupa' : 'LdapController.simple'
+  'get /users/dupa' : 'LdapController.simple',
+  'get /admin/user' : 'admin/UserController.find'
   
   /***************************************************************************
   *                                                                          *

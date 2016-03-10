@@ -20,8 +20,14 @@
 
         }]);
 
-    aslistApp.controller('UserAdminController', ['$scope', function ($scope) {
-
-        }]);    
+    aslistApp.controller('UserAdminController', ['$scope', 'AdminUserService', function ($scope, AdminUserService) {
+            AdminUserService.users().then(function(users){
+                $scope.users = users;
+                $scope.error = false;
+            }, function(errorCode) {
+                $scope.users = [];
+                $scope.error = errorCode;
+            });
+    }]);    
     
 })()

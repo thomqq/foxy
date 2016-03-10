@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * UserAdminController.js 
+ * UserController.js for admin
  * 
  * @module      :: Controller
  * @description :: Provides the base user
@@ -11,12 +11,12 @@
  */
 
 module.exports = require('waterlock').actions.user({
-  /* e.g.
-    action: function(req, res){
-  
+    
+    find: function(req, res) {
+        UserService.getSystemUsers(function(result){
+            res.send(result);
+        });
     }
-  */
- 
     
 });
 
