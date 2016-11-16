@@ -32,9 +32,9 @@ public class HibernateConfiguration {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.ibm.db2.jcc.DB2Driver");
-        dataSource.setUrl("jdbc:db2://dbdo4.firma.itsoft.pl:50010/MT");
-        dataSource.setUsername("db2i01");
-        dataSource.setPassword("db2i01");
+        dataSource.setUrl("jdbc:db2://dbdo2.firma.itsoft.pl:50040/MT");
+        dataSource.setUsername("db2i04");
+        dataSource.setPassword("db2i04");
         return dataSource;
     }
     

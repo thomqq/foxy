@@ -1,0 +1,13 @@
+pl\itsoft\tasks\tasksscheduler\service\TaskServiceHibernateImpl.class
+pl\itsoft\tasks\tasksscheduler\configuration\AppInitializer.class
+pl\itsoft\tasks\tasksscheduler\dao\TaskDao.class
+pl\itsoft\tasks\tasksscheduler\dao\TaskDaoImpl.class
+pl\itsoft\tasks\tasksscheduler\configuration\AppConfig.class
+pl\itsoft\tasks\tasksscheduler\model\Task.class
+pl\itsoft\tasks\tasksscheduler\dao\AbstractDao.class
+pl\itsoft\tasks\tasksscheduler\service\TaskService.class
+pl\itsoft\tasks\tasksscheduler\hibernate\HibernateConfiguration.class
+pl\itsoft\tasks\tasksscheduler\security\SecurityWebApplicationInitializer.class
+pl\itsoft\tasks\tasksscheduler\security\SecurityConfiguration.class
+pl\itsoft\tasks\tasksscheduler\controller\AppController.class
+pl\itsoft\tasks\tasksscheduler\controller\TasksTimetableRest.class

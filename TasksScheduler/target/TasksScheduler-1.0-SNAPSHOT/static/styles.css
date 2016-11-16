@@ -1,0 +1,24 @@
+.priority1 {
+    background-color: #f2dede;
+}
+
+.priority2 {
+    background-color: #f1ddc2;
+}
+
+.priority3 {
+    background-color: #fcf8e3;
+}
+
+.priority4 {
+    background-color: #d9edf7;
+}
+
+.priority5 {
+    background-color: #dff0d8;
+}
+
+.buttonBar {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

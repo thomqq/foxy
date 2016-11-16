@@ -1,0 +1,13 @@
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\model\Task.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\configuration\AppInitializer.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\controller\AppController.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\dao\TaskDao.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\service\TaskServiceHibernateImpl.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\controller\TasksTimetableRest.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\service\TaskService.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\configuration\AppConfig.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\dao\AbstractDao.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\security\SecurityConfiguration.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\security\SecurityWebApplicationInitializer.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\hibernate\HibernateConfiguration.java
+Y:\foxy\TasksScheduler\src\main\java\pl\itsoft\tasks\tasksscheduler\dao\TaskDaoImpl.java

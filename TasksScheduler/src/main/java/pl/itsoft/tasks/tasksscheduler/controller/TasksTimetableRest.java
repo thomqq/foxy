@@ -28,26 +28,26 @@ public class TasksTimetableRest {
     
     @RequestMapping(value = "/rest/task/{id}" ,method = RequestMethod.GET)
     public Task getTask(@PathVariable("id") int id) {
+        System.out.println("SLIWKA REST GET " + id);
         return new Task();
         //return taskService.getTask(id);
     }
     
-    @RequestMapping(value = "/task" ,method = RequestMethod.PUT)
+    @RequestMapping(value = "/rest/task" ,method = RequestMethod.PUT)
     public boolean updateTask(@RequestBody Task task) {
-        //return taskService.updateTask(task);
+        System.out.println("SLIWKA REST PUT");
         return true;
     }
     
-    @RequestMapping(value = "/task" ,method = RequestMethod.POST)
+    @RequestMapping(value = "/rest/task" ,method = RequestMethod.POST)
     public boolean addTask(@RequestBody Task task) {
-        //return taskService.addTask(task);
+        System.out.println("SLIWKA REST POST");
         return true;
     }
     
-    @RequestMapping(value = "/task/{id}" ,method = RequestMethod.DELETE)
+    @RequestMapping(value = "/rest/task/{id}" ,method = RequestMethod.DELETE)
     public boolean deleteTask(@PathVariable("id") int id) {
-        //return taskService.deleteTask(id);
+        System.out.println("SLIWKA REST DELETE " + id);
         return true;
-    }
-    
+    }    
 }
