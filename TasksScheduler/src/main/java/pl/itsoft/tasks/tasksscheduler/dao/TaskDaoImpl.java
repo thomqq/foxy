@@ -9,7 +9,7 @@ import pl.itsoft.tasks.tasksscheduler.model.Task;
  *
  * @author tsliwa
  */
-@Repository("taskDao")
+//@Repository("taskDao")
 public class TaskDaoImpl extends AbstractDao implements TaskDao{
 
     @Override

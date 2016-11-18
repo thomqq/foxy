@@ -13,11 +13,11 @@ import pl.itsoft.tasks.tasksscheduler.model.Task;
  * @author tsliwa
  */
 @Service("taskService")
-@Transactional
+//@Transactional
 public class TaskServiceHibernateImpl implements TaskService{
    
-    @Autowired
-    private TaskDao dao;
+    //@Autowired
+    //private TaskDao dao;
     
     private static List<Task> initStartTasks() {
         List<Task> result = new ArrayList<>();
@@ -32,8 +32,10 @@ public class TaskServiceHibernateImpl implements TaskService{
     
     @Override
     public List<Task> getTasks() {  
-        System.out.println("SLIWKA GET all service " + dao.getAll().size());
-        return dao.getAll();
+        //System.out.println("SLIWKA GET all service " + dao.getAll().size());
+        
+        return initStartTasks();
+        //return dao.getAll();
     }
 
     @Override
