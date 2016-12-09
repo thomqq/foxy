@@ -26,6 +26,9 @@
                 <div class="btn-group col-sm-5">
                     <button ng-click="tlc.addTaskClick()" type="button" class="btn btn-default">Add</button>
                 </div>
+                <div ng-controller="page-controller as pc" class="container btn-group col-sm-5">
+                    <button ng-click="pc.logout()" type="button" class="btn btn-default">Logout</button>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-5 list-group">

@@ -100,6 +100,15 @@
             templateUrl: 'task-edit.html'
         }
     });
+    
+    var pageControlles = app.controller('page-controller', ['$window', '$rootScope', function($window, $rootScope) {
+            
+            var controller = this;
+            controller.logout = function(){                
+                $window.location.href='logout';                
+            };
+    }]);
+    
 })();
 
 

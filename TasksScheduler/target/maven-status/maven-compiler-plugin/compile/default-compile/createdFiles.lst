@@ -3,6 +3,7 @@ pl\itsoft\tasks\tasksscheduler\configuration\AppInitializer.class
 pl\itsoft\tasks\tasksscheduler\dao\TaskDao.class
 pl\itsoft\tasks\tasksscheduler\dao\TaskDaoImpl.class
 pl\itsoft\tasks\tasksscheduler\configuration\AppConfig.class
+pl\itsoft\tasks\tasksscheduler\starter\BootStart.class
 pl\itsoft\tasks\tasksscheduler\model\Task.class
 pl\itsoft\tasks\tasksscheduler\dao\AbstractDao.class
 pl\itsoft\tasks\tasksscheduler\service\TaskService.class
